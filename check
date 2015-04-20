@@ -1,0 +1,14 @@
+
+import random
+def ptest(pH):
+	if int(pH) ==  7:
+		return "pH balanced"
+	elif pH < 7:
+		#increase pH value
+		return "pH low: increasing by " + str((7 - pH))
+	elif pH > 7:
+		#decrease pH value
+		return "pH high: decreasing by " + str((pH - 7))
+
+if __name__ == "__main__":
+	 print ptest(random.randint(1, 14))
